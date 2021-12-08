@@ -5,6 +5,8 @@ import UploadImages from "./pages/UploadImages";
 import SaveBoard from "./pages/SaveBoard";
 import PlayBoard from "./pages/PlayBoard";
 
+import './Styles/_global.scss';
+
 function App() {
   return (
     <>

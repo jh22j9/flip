@@ -1,0 +1,25 @@
+@import '../components/Boards.scss';
+@import '../components/Board.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&family=IBM+Plex+Mono:wght@300;600;700&family=IBM+Plex+Sans+KR:wght@200;500&family=Noto+Sans+KR:wght@100;400;500&family=Work+Sans:wght@100;300;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+  // box-sizing: border-box;
+  // background-color: $secondaryLight1Color;
+  // box-sizing: border-box;
+  // height: 100vh;
+  // min-height: 100%;
+}
+
+// #root {
+//   height: 100%;
+// }
