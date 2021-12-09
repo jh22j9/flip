@@ -1,3 +1,4 @@
+@import '../components/Header.scss';
 @import '../components/Boards.scss';
 @import '../components/Board.scss';
 
@@ -5,12 +6,12 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'IBM Plex Mono', monospace;
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: 'IBM Plex Mono', monospace;
   // -webkit-font-smoothing: antialiased;
   // -moz-osx-font-smoothing: grayscale;
   // box-sizing: border-box;
@@ -19,6 +20,8 @@ body {
   // height: 100vh;
   // min-height: 100%;
 }
+
+a{ color:#000000; text-decoration: none;}  
 
 // #root {
 //   height: 100%;
