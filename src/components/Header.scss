@@ -1,10 +1,10 @@
 header {
   background-color: #fff;
   width: 100%;
-  height: 180px;
-  .header-top {
+  height: 22vh;
+  .top-line {
     background-color: #000;
-    height: 20px;
+    height: 1.1rem;
   }
   .header-main {
     padding: 50px;
@@ -25,11 +25,11 @@ header {
         cursor: pointer;
       }
       .create-btn {
-        background-color: #F0E7BE;
+        background-color: #f0e7be;
       }
       .signIn-btn {
         background-color: #000;
-        color: #fff
+        color: #fff;
       }
     }
   }

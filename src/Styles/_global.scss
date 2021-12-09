@@ -1,12 +1,14 @@
-@import '../components/Header.scss';
-@import '../components/Boards.scss';
-@import '../components/Board.scss';
+@import "../components/Header.scss";
+@import "../components/Boards.scss";
+@import "../components/Board.scss";
+@import "../pages/CreateBoard.scss";
+@import "../components/Footer.scss";
 
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&family=IBM+Plex+Mono:wght@300;600;700&family=IBM+Plex+Sans+KR:wght@200;500&family=Noto+Sans+KR:wght@100;400;500&family=Work+Sans:wght@100;300;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&family=IBM+Plex+Mono:wght@300;600;700&family=IBM+Plex+Sans+KR:wght@200;500&family=Noto+Sans+KR:wght@100;400;500&family=Work+Sans:wght@100;300;700;800&display=swap");
 
 * {
   box-sizing: border-box;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   margin: 0;
   padding: 0;
 }
@@ -21,7 +23,10 @@ body {
   // min-height: 100%;
 }
 
-a{ color:#000000; text-decoration: none;}  
+a {
+  color: #000000;
+  text-decoration: none;
+}
 
 // #root {
 //   height: 100%;
