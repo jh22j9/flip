@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import { useNavigate } from "react-router";
 import Header from "./components/Header";
 import Main from "./pages/Main";
 import CreateBoard from "./pages/CreateBoard";
@@ -10,12 +11,13 @@ import Footer from "./components/Footer";
 import "./Styles/_global.scss";
 
 function App() {
+  const navigate = useNavigate();
   return (
     <>
-      <Header />
+      <Header navigate={navigate} />
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/create" element={<CreateBoard />} />
+        <Route path="/create" element={<CreateBoard navigate={navigate} />} />
         <Route path="/upload" element={<UploadImages />} />
         <Route path="/save" element={<SaveBoard />} />
         <Route path="/play" element={<PlayBoard />} />

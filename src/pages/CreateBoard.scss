@@ -22,4 +22,10 @@
       background-color: #f0e7be;
     }
   }
+  .prev,
+  .next {
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+  }
 }
