@@ -1,7 +1,7 @@
 import React from "react";
 
 function UploadImages() {
-  return <div>보드 이미지 업로드</div>;
+  return <div className="wrapper"></div>;
 }
 
 export default UploadImages;
