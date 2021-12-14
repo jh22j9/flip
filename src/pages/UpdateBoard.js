@@ -25,9 +25,9 @@ function UpdateBoard() {
   const content = <Cards cards={cards} content={uploadIcon} />;
 
   return (
-    <div>
+    <>
       <MakeBoard content={content} nextRoute="save" />
-    </div>
+    </>
   );
 }
 
