@@ -7,7 +7,7 @@ function SaveBoard() {
 
   const img = <img></img>;
   const content = (
-    <div className="wrapper">
+    <div className="content-wrapper">
       <Cards cards={cards} content={img} />
       <div className="input-fields">
         <input type="text" placeholder="보드 제목을 입력하세요."></input>
