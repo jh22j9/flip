@@ -1,10 +1,9 @@
 ---
 name: Feature request
 about: 기능 구현
-title: 'Feat(branch): title'
-labels: ''
+title: "feat(branch): title"
+labels: ""
 assignees: jheeju
-
 ---
 
 ## 기능
