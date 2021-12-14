@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import MakeBoard from "../components/MakeBoard";
+import Cards from "../components/Cards";
 import { RiUploadCloudFill } from "react-icons/ri";
 
 function UpdateBoard() {
@@ -9,20 +10,19 @@ function UpdateBoard() {
   const onUploadIcon = () => {
     uploadImage.current.click();
   };
-  const content = (
-    <div className="cards-wrapper">
-      {cards.map((card, index) => (
-        <div className="card">
-          <RiUploadCloudFill
-            fontSize="1.5rem"
-            onClick={onUploadIcon}
-            cursor="pointer"
-          />
-          <input ref={uploadImage} type="file" accept="image/*" />
-        </div>
-      ))}
-    </div>
+
+  const uploadIcon = (
+    <>
+      <RiUploadCloudFill
+        fontSize="1.5rem"
+        onClick={onUploadIcon}
+        cursor="pointer"
+      />
+      <input ref={uploadImage} type="file" accept="image/*" />
+    </>
   );
+
+  const content = <Cards cards={cards} content={uploadIcon} />;
 
   return (
     <div>
