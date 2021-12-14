@@ -1,7 +1,6 @@
-import React from 'react'
+import React from "react";
 
-function Board({board}) {
-  
+function Board({ board }) {
   return (
     <div className="board">
       <div className="content">
@@ -11,12 +10,13 @@ function Board({board}) {
         <div className="text-box">
           <h2>{board.title}</h2>
           <div className="description">
-            {board.userId}<span>👍{board.likes}</span>
+            {board.userId}
+            <span>👍{board.likes}</span>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Board
+export default Board;

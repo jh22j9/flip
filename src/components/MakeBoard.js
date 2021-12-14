@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router";
+import { useNavigate, useLocation } from "react-router";
 
 import { IoMdArrowDropleft } from "react-icons/io";
 import { IoMdArrowDropright } from "react-icons/io";
@@ -10,7 +10,15 @@ function MakeBoard({ content, nextRoute }) {
   const onBackArrow = () => navigate(-1);
   const onForwardArrow = () => navigate(`/${nextRoute}`);
 
+  // const location = useLocation();
+
+  // const style = {};
+  // if (location.pathname === "/create") {
+  //   style.height = "76vh";
+  // }
+
   return (
+    // <div className="wrapper" style={style}>
     <div className="wrapper">
       <div className="prev">
         <IoMdArrowDropleft

@@ -1,3 +1,21 @@
-.wrapper {
-  height: 76vh;
+.cards-wrapper {
+  width: 40rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  // background-color: yellow;
+  .card {
+    width: 9rem;
+    height: 9rem;
+    margin: 1rem;
+    border: 2.5px solid #000;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input {
+      display: none;
+    }
+  }
 }

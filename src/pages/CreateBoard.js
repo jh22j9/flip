@@ -27,7 +27,7 @@ function CreateBoard() {
     </div>
   );
 
-  return <MakeBoard content={content} nextRoute={"save"} />;
+  return <MakeBoard content={content} nextRoute={"update"} />;
 }
 
 export default CreateBoard;
