@@ -17,7 +17,7 @@ function App() {
       <Header navigate={navigate} />
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/create" element={<CreateBoard navigate={navigate} />} />
+        <Route path="/create" element={<CreateBoard />} />
         <Route path="/upload" element={<UpdateBoard />} />
         <Route path="/save" element={<SaveBoard />} />
         <Route path="/play" element={<PlayBoard />} />

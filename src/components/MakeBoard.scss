@@ -1,0 +1,16 @@
+.wrapper {
+  height: 76vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 90px;
+  .content {
+    width: 60rem;
+  }
+  .prev,
+  .next {
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+  }
+}
