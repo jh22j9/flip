@@ -11,15 +11,21 @@
     align-items: flex-start;
     margin-left: 2rem;
     input {
-      width: 23rem;
+      width: 24rem;
       height: 3rem;
       color: #e6e6e6;
       margin-bottom: 3rem;
       border: none;
       border-left: 5.5px solid black;
       padding-left: 1.8rem;
-      font-size: 2rem;
+      font-size: 1.5rem;
       letter-spacing: 1px;
+      outline: none;
+      color: #000;
+      caret-color: #e6e6e6;
+    }
+    input:nth-child(1) {
+      font-size: 2rem;
     }
     input::placeholder {
       color: #e6e6e6;
