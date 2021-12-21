@@ -1,18 +1,29 @@
 import React from "react";
 import MakeBoard from "../components/MakeBoard";
 import Cards from "../components/Cards";
-
 import { FaLink } from "react-icons/fa";
 import { BsStar } from "react-icons/bs";
 // import { BsStarFill } from "react-icons/bs";
 
-function PlayBoard({ cards }) {
-  const img = <img></img>;
+function PlayBoard() {
+  const urls = [
+    "https://doodleipsum.com/700x700?i=9c8765a80fc8a28621b7178c9aec581d",
+    "https://doodleipsum.com/700x700?i=5d1d0459018cb18996f192488490c344",
+    "https://doodleipsum.com/700x700?i=008c40ecc01a1085a88f20c2fa995ec4",
+    "https://doodleipsum.com/700x700?i=7d79895540161ca8c31dff95199e7151",
+  ];
 
-  console.log("cards", cards);
+  const images = urls.map((url, index) => ({ id: index + 1, imgUrl: url }));
+  const lastOne = {
+    id: 9,
+    imgUrl:
+      "https://doodleipsum.com/700x700?i=a79e5ddf189bb318050963124f848335",
+  };
+  const pairOfCards = [...images, ...images, lastOne];
+
   const content = (
     <div className="play-board-wrapper">
-      <Cards cards={cards} content={img} />
+      <Cards cards={pairOfCards} />
       <div className="score">2 / 8</div>
       <div className="info">
         <h1>Ipsum Lorem 작가의 일러스트레이션</h1>
