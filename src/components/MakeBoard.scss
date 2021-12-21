@@ -1,3 +1,9 @@
+@mixin flexArrow($direction) {
+  width: 10rem;
+  display: flex;
+  justify-content: $direction;
+}
+
 .wrapper {
   height: 76vh;
   display: flex;
@@ -5,16 +11,19 @@
   align-items: center;
   padding-bottom: 90px;
   .content {
-    width: 60rem;
+    // width: 80rem;
+    width: 100rem;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
+    margin: 0;
   }
-  .prev,
+  .prev {
+    @include flexArrow(flex-end);
+  }
   .next {
-    width: 20rem;
-    display: flex;
-    justify-content: center;
+    @include flexArrow(flex-start);
   }
 }

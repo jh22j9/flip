@@ -10,15 +10,13 @@ function MakeBoard({ content, nextRoute }) {
   const onBackArrow = () => navigate(-1);
   const onForwardArrow = () => navigate(`/${nextRoute}`);
 
-  // const location = useLocation();
-
+  const pathname = useLocation().pathname;
   // const style = {};
   // if (location.pathname === "/create") {
   //   style.height = "76vh";
   // }
 
   return (
-    // <div className="wrapper" style={style}>
     <div className="wrapper">
       <div className="prev">
         <IoMdArrowDropleft
@@ -29,11 +27,15 @@ function MakeBoard({ content, nextRoute }) {
       </div>
       <div className="content">{content}</div>
       <div className="next">
-        <IoMdArrowDropright
-          fontSize="2.5rem"
-          cursor="pointer"
-          onClick={onForwardArrow}
-        />
+        {pathname === "/play" ? (
+          <></>
+        ) : (
+          <IoMdArrowDropright
+            fontSize="2.5rem"
+            cursor="pointer"
+            onClick={onForwardArrow}
+          />
+        )}
       </div>
     </div>
   );
