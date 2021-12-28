@@ -1,39 +1,70 @@
 .play-board-wrapper {
   width: 100%;
-  height: 100%;
-  // background-color: yellow;
+  height: 125vh;
   display: flex;
-  padding-left: 3rem;
-  .score {
-    width: 3rem;
-    display: flex;
-    padding: 1.5rem 0;
-    align-items: flex-end;
+  flex-direction: column;
+  // align-items: center;
+  .top-line,
+  .bottom-line {
+    background-color: #000;
+    height: 1.1rem;
   }
-  .info {
-    // background-color: sandybrown;
-    width: 35rem;
+  .board-wrapper {
+    width: 100%;
+    height: 95.5vh;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 1rem;
-    h1 {
-      font-size: 1.8rem;
-      margin-bottom: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    .cards-section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding-left: 10rem;
     }
-    p {
-      font-size: 1.1rem;
-      margin-bottom: 5rem;
-    }
-    .tags {
-      height: 5rem;
-      margin-bottom: 3rem;
-    }
-    .username {
-      margin-bottom: 4rem;
-    }
-    .icon-link {
-      margin-bottom: 1rem;
+    .side-bar-section {
+      width: 10rem;
+      height: 100%;
+      // background-color: hotpink;
+      display: flex;
+      align-items: center;
+      // flex-direction: column;
+      // padding: 9rem 0;
+      .side-bar-content {
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        .icons {
+          display: flex;
+          flex-direction: column;
+          padding-top: 3rem;
+          .icon-link {
+            margin-bottom: 1rem;
+          }
+        }
+        .score {
+          font-size: 1.5rem;
+          margin-bottom: 3rem;
+        }
+      }
     }
   }
+  .info-wrapper {
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .info {
+      width: 65rem;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  // .score {
+  //   width: 3rem;
+  //   display: flex;
+  //   padding: 1.5rem 0;
+  //   align-items: flex-end;
+  // }
 }

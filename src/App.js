@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { useNavigate } from "react-router";
+import { useNavigate, useLocation } from "react-router";
 import Header from "./components/Header";
 import Main from "./pages/Main";
 import CreateBoard from "./pages/CreateBoard";
@@ -7,16 +7,16 @@ import UpdateBoard from "./pages/UpdateBoard";
 import SaveBoard from "./pages/SaveBoard";
 import PlayBoard from "./pages/PlayBoard";
 import Footer from "./components/Footer";
-import Boards from "./components/Boards";
 
 import "./Styles/_global.scss";
 
 function App() {
   const navigate = useNavigate();
+  const pathname = useLocation().pathname;
 
   return (
     <>
-      <Header navigate={navigate} />
+      {pathname === "/play" ? <></> : <Header navigate={navigate} />}
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/create" element={<CreateBoard />} />
